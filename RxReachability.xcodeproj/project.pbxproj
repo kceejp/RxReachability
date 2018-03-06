@@ -128,6 +128,7 @@
 				95CD2D4C1FD052E200AD049A /* Headers */,
 				95CD2D4D1FD052E200AD049A /* Resources */,
 				95CD2D641FD055C700AD049A /* Carthage Copy Frameworks */,
+				C3657492204E9CBE009CE97B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -179,6 +180,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C3657492204E9CBE009CE97B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then\nrm -fr Frameworks\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		95CD2D4A1FD052E200AD049A /* Sources */ = {
